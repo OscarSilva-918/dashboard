@@ -1,0 +1,61 @@
+.activity {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: var(--gray-900);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.item {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.item:hover {
+  background: var(--gray-50);
+}
+
+.indicator {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  margin-top: 0.5rem;
+}
+
+.indicator.success {
+  background: var(--success);
+}
+
+.indicator.warning {
+  background: var(--warning);
+}
+
+.indicator.info {
+  background: var(--primary);
+}
+
+.message {
+  font-size: 0.875rem;
+  color: var(--gray-900);
+}
+
+.time {
+  font-size: 0.75rem;
+  color: var(--gray-700);
+  margin-top: 0.25rem;
+}

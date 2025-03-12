@@ -1,0 +1,11 @@
+.main {
+  padding: 2rem;
+  margin-left: 16rem;
+  transition: margin-left 0.3s ease;
+}
+
+@media (max-width: 1024px) {
+  .main {
+    margin-left: 4rem;
+  }
+}

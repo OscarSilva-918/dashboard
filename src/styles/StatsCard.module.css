@@ -1,0 +1,44 @@
+.card {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.info h3 {
+  color: var(--gray-700);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
+}
+
+.value {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--gray-900);
+}
+
+.trend {
+  font-size: 0.875rem;
+  margin-top: 0.5rem;
+}
+
+.trend.up {
+  color: var(--success);
+}
+
+.trend.down {
+  color: var(--error);
+}
+
+.icon {
+  background: var(--gray-100);
+  padding: 1rem;
+  border-radius: 50%;
+  color: var(--primary);
+}

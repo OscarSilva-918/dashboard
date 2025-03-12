@@ -1,0 +1,126 @@
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.header {
+  @apply mb-6;
+}
+
+.title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white;
+}
+
+.content {
+  @apply flex flex-col gap-6;
+}
+
+.driversSection {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-sm p-6 transition-all duration-300;
+}
+
+.sectionTitle {
+  @apply text-lg font-semibold text-gray-900 dark:text-white;
+}
+
+.driverCount {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.collapseButton {
+  @apply p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 
+         text-gray-600 dark:text-gray-400 transition-colors;
+}
+
+.driverGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4;
+}
+
+.map {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-sm overflow-hidden transition-all duration-300;
+  height: 600px;
+}
+
+.map.mapExpanded {
+  height: 800px;
+}
+
+.mapContainer {
+  height: 100%;
+  width: 100%;
+}
+
+.driverCard {
+  @apply p-4 cursor-pointer transition-all duration-200 hover:shadow-md;
+}
+
+.driverCard.selected {
+  @apply ring-2 ring-blue-500;
+}
+
+.driverHeader {
+  @apply flex items-center justify-between mb-2;
+}
+
+.driverName {
+  @apply font-medium text-gray-900 dark:text-white;
+}
+
+.driverDetails {
+  @apply mt-2;
+}
+
+.status {
+  @apply text-sm px-2 py-1 rounded-full;
+}
+
+.status.available {
+  @apply bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-400;
+}
+
+.status.busy {
+  @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-400;
+}
+
+.driverInfo {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.iconButton {
+  @apply p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 
+         text-gray-600 dark:text-gray-400 transition-colors;
+}
+
+.contactButton {
+  @apply mt-2 w-full px-3 py-1 bg-blue-600 text-white rounded-md text-sm
+         hover:bg-blue-700 transition-colors;
+}
+
+.popup {
+  @apply p-2 min-w-[200px];
+}
+
+.popup .driverName {
+  @apply text-base font-medium mb-1;
+}
+
+.popup .driverInfo {
+  @apply text-sm text-gray-600 mb-1;
+}
+
+.alert {
+  @apply fixed bottom-4 right-4 flex items-center gap-2 px-4 py-2
+         bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-400
+         rounded-lg shadow-lg;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

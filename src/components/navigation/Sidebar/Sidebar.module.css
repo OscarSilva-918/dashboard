@@ -1,0 +1,34 @@
+.sidebar {
+  @apply fixed top-0 left-0 h-full bg-white dark:bg-gray-800 
+         border-r border-gray-200 dark:border-gray-700
+         transition-all duration-300 z-50 w-64;
+}
+
+.sidebar.collapsed {
+  @apply w-16;
+}
+
+.header {
+  @apply flex items-center justify-between h-16 px-4;
+}
+
+.title {
+  @apply text-xl font-bold text-gray-900 dark:text-white;
+}
+
+.collapseButton {
+  @apply p-2 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700;
+}
+
+.nav {
+  @apply mt-4;
+}
+
+.navItem {
+  @apply flex items-center px-4 py-3 text-gray-900 dark:text-gray-100
+         hover:bg-gray-100 dark:hover:bg-gray-700 space-x-4;
+}
+
+.navItem.active {
+  @apply bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300;
+}

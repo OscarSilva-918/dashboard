@@ -1,0 +1,77 @@
+.container {
+  @apply max-w-7xl mx-auto px-4;
+}
+
+.header {
+  @apply flex justify-between items-center mb-8;
+}
+
+.title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white;
+}
+
+.actions {
+  @apply flex space-x-4;
+}
+
+.actionButton {
+  @apply flex items-center space-x-2 px-4 py-2 bg-blue-600 text-white rounded-md
+         hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.content {
+  @apply bg-white dark:bg-gray-800 rounded-lg shadow-md p-6;
+}
+
+.shipmentsGrid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6;
+}
+
+.shipmentCard {
+  @apply bg-gray-50 dark:bg-gray-700 rounded-lg p-4;
+}
+
+.shipmentHeader {
+  @apply flex items-center space-x-2 mb-3;
+}
+
+.trackingNumber {
+  @apply font-medium text-gray-900 dark:text-white;
+}
+
+.shipmentInfo {
+  @apply space-y-2;
+}
+
+.customer {
+  @apply text-sm text-gray-900 dark:text-white;
+}
+
+.destination {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.status {
+  @apply inline-block px-2 py-1 text-xs font-semibold rounded-full;
+}
+
+.status.pending {
+  @apply bg-yellow-100 text-yellow-800 dark:bg-yellow-900/20 dark:text-yellow-300;
+}
+
+.status.in_transit {
+  @apply bg-blue-100 text-blue-800 dark:bg-blue-900/20 dark:text-blue-300;
+}
+
+.status.delivered {
+  @apply bg-green-100 text-green-800 dark:bg-green-900/20 dark:text-green-300;
+}
+
+.assignButton {
+  @apply mt-4 w-full px-4 py-2 bg-blue-600 text-white rounded-md
+         hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.modal {
+  @apply fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4 z-50;
+}

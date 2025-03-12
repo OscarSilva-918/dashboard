@@ -1,0 +1,97 @@
+.container {
+  @apply max-w-7xl mx-auto px-4 py-8;
+}
+
+.header {
+  @apply mb-8;
+}
+
+.title {
+  @apply text-2xl font-bold text-gray-900 dark:text-white;
+}
+
+.stats {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-6 mb-8;
+}
+
+.statCard {
+  @apply flex items-center p-6 bg-white dark:bg-gray-800;
+}
+
+.statIcon {
+  @apply p-3 rounded-full bg-blue-100 dark:bg-blue-900/20 text-blue-600 
+         dark:text-blue-400 mr-4;
+}
+
+.statContent h3 {
+  @apply text-sm text-gray-600 dark:text-gray-400;
+}
+
+.statValue {
+  @apply text-2xl font-bold text-gray-900 dark:text-white mt-1;
+}
+
+.deliveries {
+  @apply bg-white dark:bg-gray-800 p-6;
+}
+
+.sectionTitle {
+  @apply text-lg font-semibold text-gray-900 dark:text-white mb-4;
+}
+
+.deliveryList {
+  @apply space-y-4;
+}
+
+.deliveryItem {
+  @apply flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-700/50 
+         rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors;
+}
+
+.deliveryInfo {
+  @apply flex-1;
+}
+
+.customerName {
+  @apply font-medium text-gray-900 dark:text-white;
+}
+
+.address {
+  @apply text-sm text-gray-600 dark:text-gray-400 mt-1;
+}
+
+.amount {
+  @apply text-sm font-medium text-gray-900 dark:text-white mt-1;
+}
+
+.actions {
+  @apply flex gap-2;
+}
+
+.acceptButton {
+  @apply px-4 py-2 bg-green-600 text-white rounded-md
+         hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500;
+}
+
+.rejectButton {
+  @apply px-4 py-2 bg-red-600 text-white rounded-md
+         hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-500;
+}
+
+.notification {
+  @apply fixed bottom-4 right-4 flex items-center gap-2 px-4 py-2
+         bg-green-100 dark:bg-green-900/20 text-green-800 dark:text-green-400
+         rounded-lg shadow-lg;
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
