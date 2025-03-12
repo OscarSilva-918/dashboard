@@ -8,12 +8,14 @@ import {
   Settings,
   ChevronLeft,
   Menu,
-  MapPin
+  MapPin,
+  DollarSign
 } from 'lucide-react';
 import styles from './Sidebar.module.css';
 
 const menuItems = [
   { icon: LayoutDashboard, label: 'Panel Principal', path: '/dashboard' },
+  { icon: DollarSign, label: 'Cotizar Envío', path: '/shipping-quote' },
   { icon: Package, label: 'Gestión de Envíos', path: '/shipments' },
   { icon: ClipboardList, label: 'Pedidos', path: '/orders' },
   { icon: MapPin, label: 'Seguimiento', path: '/tracking' },

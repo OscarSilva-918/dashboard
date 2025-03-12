@@ -9,6 +9,7 @@ import { OperatorDashboard } from '@/pages/operator/OperatorDashboard';
 import { OrdersPage } from '@/pages/orders/OrdersPage';
 import { ReportsPage } from '@/pages/reports/ReportsPage';
 import { SettingsPage } from '@/pages/settings/SettingsPage';
+import { ShippingQuotePage } from '@/pages/ShippingQuote/ShippingQuotePage';
 
 function ProtectedRoute({ children, allowedRoles }: { children: JSX.Element, allowedRoles: string[] }) {
   const { isAuthenticated, user } = useAuth();
@@ -42,11 +43,20 @@ export function AppRoutes() {
         }
       />
 
-      <Route
+<Route
         path="/shipments"
         element={
           <ProtectedRoute allowedRoles={['admin', 'operator']}>
             <ShipmentsPage />
+          </ProtectedRoute>
+        }
+      />
+
+<Route
+        path="/shipping-quote"
+        element={
+          <ProtectedRoute allowedRoles={['admin', 'operator']}>
+            <ShippingQuotePage />
           </ProtectedRoute>
         }
       />
